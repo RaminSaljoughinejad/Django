@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load static %}
+
+    {% block page_title %}
+        All Exercises
+    {% endblock page_title %}
+
+    {% block css_files %}
+        <link rel='stylesheet' type='text/css' href="{% static "Python_Fundamentals/python_fundamentals.css" %}" >
+        <link rel='stylesheet' type='text/css' href="{% static "includes/header.css" %}" >
+    {% endblock css_files %}
+    
+    {% block content %}
+
+        {% include "Python_Fundamentals/includes/header.html" %}
+        <ul>
+        {% for key, value in exercises.items %}
+            {% if value%}
+                <li><a href='{% url 'py_fun_int' key %}'>{{ value|title }}</a></li>
+            {% else %}
+                <li><a href='{% url 'py_fun_int' key %}'>Not implemented</a></li>
+            {% endif %}
+        {% endfor %}
+        </ul>
+    {% endblock  %}

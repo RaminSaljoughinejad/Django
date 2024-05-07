@@ -1,0 +1,36 @@
+ul{
+    list-style: none;
+    margin: 2rem auto;
+    width: 90%;
+    max-width: 15rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    padding: 1rem;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 28rem;
+    background-color:#eeeeee;
+}
+
+li{
+    margin:1rem 0;
+    text-align: center;
+    font-size:1.5rem;
+    border-bottom:1px solid lightgray;
+    padding-bottom:1rem;
+}
+
+li:last-of-type{
+    border-bottom: none;
+}
+
+li a{
+    text-decoration: none;
+    color:#3e3d3d
+}
+
+li a:hover,
+li a:active{
+    color: #800947;
+}

@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% load static %}
+    <title>E-{{ ex_num }}</title>
+    {% block css_files %}
+        <link rel='stylesheet' type='text/css' href="{% static "Python_Fundamentals/exercise.css" %}" >
+        <link rel='stylesheet' type='text/css' href="{% static "includes/header.css" %}" >
+    {% endblock css_files %}
+    {% block content %}
+
+        {% include "Python_Fundamentals/includes/header.html" %}
+
+        <h1>Exercise {{ ex_num }}</h1>
+        {% if text %}
+            <h2>{{ text }}</h2>
+        {% else %}
+            <p class='fallback'>Not Implemented</p>
+        {% endif %}
+    {% endblock content %}
