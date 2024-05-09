@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_title %}All Books{% endblock page_title %}</title>
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static "video_outlet/index.css" %}">
+{% endblock css_files %}
+
+{% block content %}
+    <ul>
+        {% for movie in movies %}
+            <li><a href='{{ movie.get_absolute_url }}'>{{ movie.title }} (Rating: {{ movie.rating }})</a></li>
+        {% endfor %}
+    </ul>
+    
+    <hr>
+    <p>Total Number of Movies: {{ total_number_of_movies }}</p>
+    <p>Average Rating of Movies: {{ avg_rating.rating__avg }}</p>
+    
+{% endblock content %}
