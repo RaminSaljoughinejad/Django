@@ -1,0 +1,108 @@
+#welcome{
+    background: linear-gradient(to right top, #338dc4, #0bb5e9);
+    padding: 6rem 12%;
+    text-align: center;
+}
+
+#welcome header{
+    display: flex;
+    align-items:flex-start;
+    margin:3rem auto;
+}
+
+#welcome header img{
+    border-radius: 50%;
+    background-color:white;
+    width: 13rem;
+    height:13rem;
+    object-fit: cover;
+    object-position: top;
+    border: 5px solid white;
+    margin-right: auto;
+    margin-left: auto;
+}
+#welcome p{
+    color:white;
+    
+    font-size:1.5rem;
+}
+
+#latest-posts{
+    width:60rem;
+    background-color:white;
+    padding:2rem;
+    margin:-6rem auto 2rem auto;
+    box-shadow: 1px 1px 12px rgba(0,0,0,0.4);
+    text-align: center;
+}
+
+.post a{
+    text-decoration: none;
+    color:black;
+}
+
+#latest-posts h2{
+    text-align: center;
+}
+
+.post img{
+    width:10rem;
+    height:10rem;
+    border-radius: 50%;
+    border:5px solid #338dc4;
+}
+
+#latest-posts ul{
+    list-style: none;
+    margin:0;
+    padding:0;
+    display: flex;
+    gap:1rem;
+}
+
+#latest-posts li{
+    flex:1;
+    padding:1rem;
+    border-radius: 12px;
+}
+
+#latest-posts li:hover,
+#latest-posts li:active{
+    background-color:#338dc4;
+}
+#latest-posts li:hover a,
+#latest-posts li:active a{
+    color:white;
+}
+#latest-posts li:hover img,
+#latest-posts li:active img{
+    border-color:white;
+}
+
+
+#about{
+    width:80rem;
+    background-color:white;
+    padding:2rem;
+    margin:auto;
+    box-shadow: 1px 1px 12px rgba(0,0,0,0.4);
+}
+
+#footer{
+    width:100%;
+    background: linear-gradient(to right top, #0bb5e9, #338dc4);
+    padding: 6rem 12%;
+    text-align: center;
+    bottom:0;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    margin-top:9.3rem;
+}
+#footer p{
+    bottom:0;
+    left:0;
+    color:white;
+    text-align: center;
+}
