@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_title %}{{ title }}{% endblock page_title %}</title>
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static "video_outlet/movie_detail.css" %}">
+{% endblock css_files %}
+
+{% block content %}
+    <h1>{{ title }}</h1>
+    <h2>{{ main_act }}</h2>
+    <p>The movie has a rating of {{ raiting }}
+        {% if is_bestseller %}
+            and is bestseller.
+        {% else %}
+            but is not a bestseller.
+        {% endif %}
+    </p>
+{% endblock content %}
