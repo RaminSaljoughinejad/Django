@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_title %}Review Detail{% endblock page_title %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static "reviews/review-detail.css" %}">
+{% endblock css_files %}
+
+{% block content %}
+    <div class='main-wrapper'>
+        <h1>User: {{ review.user_name }}</h1>
+        <h3>Rating: {{ review.rating }}</h3>
+        <p>Feedback: {{ review.review_text }}</p>
+    </div>
+{% endblock content %}

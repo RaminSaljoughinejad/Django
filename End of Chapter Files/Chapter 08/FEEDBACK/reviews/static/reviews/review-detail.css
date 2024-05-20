@@ -1,0 +1,8 @@
+.main-wrapper{
+    width:30rem;
+    padding:1.5rem;
+    color:white;
+    margin: 5rem auto 0 auto;
+    border:1px solid rgb(90, 87, 87);
+    border-radius: 8px;
+}

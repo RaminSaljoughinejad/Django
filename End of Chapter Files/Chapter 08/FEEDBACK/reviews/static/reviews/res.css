@@ -1,0 +1,16 @@
+.main-wrapper{
+    width:30rem;
+    max-width:30rem;
+    padding:1.5rem;
+    border:1px solid rgb(83, 82, 82);
+    margin:5rem auto 0 auto;
+    border-radius: 12px;
+}
+.main-wrapper h3,
+.main-wrapper p{
+    color:white;
+}
+.main-wrapper h2{
+    text-align: center;
+    color:white;
+}

@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_title %}All Feedbacks{% endblock page_title %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static "reviews/all-reviews.css" %}">
+{% endblock css_files %}
+
+{% block content %}
+    <div class='main-wrapper'>
+        {% for review in reviews %}
+            <ul>
+                <li><a href="{% url "review-detail-url" review.id %}">{{ review.user_name }} -- Rating:{{ review.rating }}</a></li>
+            </ul>
+        {% endfor %}
+    </div>
+{% endblock content %}
