@@ -1,0 +1,11 @@
+.main-wrapper{
+    color:white;
+}
+.main-wrapper a{
+    color:white;
+    padding:0.5rem;
+    font-size:1.2rem;
+}
+.main-wrapper li{
+    margin:0.5rem 0 0.5rem 0;
+}

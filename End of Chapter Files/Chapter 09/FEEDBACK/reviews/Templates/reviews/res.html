@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_title %}Thank You{% endblock page_title %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static "reviews/res.css" %}">
+{% endblock css_files %}
+
+{% block content %}
+    <div class='main-wrapper'>
+        <h2>{{ message }}</h2>
+        <h3>Your Feedback has been sent to our support-team.</h3>
+        <p>Thank you for sharing your oppinion with us.</p>
+    </div>
+{% endblock content %}
+

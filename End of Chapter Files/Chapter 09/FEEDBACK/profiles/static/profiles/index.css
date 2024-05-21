@@ -1,0 +1,48 @@
+.main-wrapper{
+    width:30rem;
+    max-width: 30rem;
+    color:white;
+    border:1px solid rgb(93, 83, 83);
+    padding:3rem;
+    margin:5rem auto 0 auto;
+    border-radius: 8px;
+}
+.main-wrapper input,
+.main-wrapper button{
+    display:block;
+}
+.main-wrapper input[type='file']{
+    width:90%;
+    margin:auto;
+    font-size: 1.2rem;
+}
+.main-wrapper button{
+    margin:2rem auto 0 auto;
+    width:90%;
+    height:2.5rem;
+    font-size: 1.3rem;
+    background-color:rgb(61, 130, 235);
+    color:white;
+    border:1px solid rgb(61, 130, 235);
+    border-radius: 8px;
+}
+.main-wrapper button:hover,
+.main-wrapper button:focus{
+    background-color:rgb(26, 82, 165);
+    border-color:rgb(26, 82, 165);
+}
+.main-wrapper label{
+    display:block;
+    width:90%;
+    margin:auto;
+    padding:0.5rem 0 0.5rem 0;
+}
+.main-wrapper ul{
+    width:90%;
+    display:block;
+}
+.main-wrapper ul li{
+    width:90%;
+    margin:auto;
+    color:rgb(163, 27, 27);
+}

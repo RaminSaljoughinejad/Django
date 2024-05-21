@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_title %}User Profiles{% endblock page_title %}User Profiles
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static "profiles/user_profiles.css" %}">
+{% endblock css_files %}
+
+{% block content %}
+    <div class='main-wrapper'>
+        <ul>
+            {% for path in paths %}
+                <li><img src="{{ path.image.url }}" width="100px" alt="{{ path.image }}"></li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endblock content %}

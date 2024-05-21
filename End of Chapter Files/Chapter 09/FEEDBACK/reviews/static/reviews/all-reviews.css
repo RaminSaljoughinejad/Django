@@ -1,0 +1,23 @@
+.main-wrapper{
+    width:15rem;
+    max-width: 15rem;
+    padding:2rem;
+    border:1px solid rgb(90, 88, 88);
+    border-radius: 12px;
+    margin: 5rem auto 0 auto;
+    color:white;
+}
+.main-wrapper ul li{
+    margin:1.5rem 0 1.5rem 0;
+}
+.main-wrapper ul li a{
+    color:white;
+    padding:0.5rem;
+    border-radius: 6px;
+    font-size: 1.2rem;
+}
+.main-wrapper ul li a:hover{
+    background-color: white;
+    color:rgb(13, 51, 75);
+}
+
