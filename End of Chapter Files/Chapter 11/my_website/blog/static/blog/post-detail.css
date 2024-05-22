@@ -1,0 +1,208 @@
+body{
+    background-color:#e7e7e7;
+}
+
+#main-navigation{
+    background: linear-gradient(to right top, #338dc4, #0bb5e9);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+#summary{
+    margin: 8rem auto 3rem auto;
+    padding:2rem;
+    width:90%;
+    max-width: 90rem;
+    border-radius: 12px;
+    background-color: #15753f;
+    position: relative;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.45);
+    height:22rem;
+}
+
+#summary h2{
+    color:white;
+    font-size:4.5rem;
+    margin-bottom:-0.25rem;
+}
+
+#summary article{
+    position:absolute;
+    top:2rem;
+    right: 3rem;
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    text-align: right;
+    color: white;
+}
+
+#summary article img{
+    width:12rem;
+    height:12rem;
+    border-radius: 12px;
+    transform: rotate(5deg);
+    border:5px solid white;
+    margin-bottom: 1rem;
+}
+
+#summary:hover,
+#summary:active{
+    background-color:#338dc4;
+}
+
+#summary address{
+    font-weight: bold;
+}
+
+#summary time{
+    font-weight: bold;
+}
+
+#summary a{
+    color:white;
+}
+#summary .tag{
+    color:inherit;
+    background-color: white;
+    padding:0.3rem 1rem;
+    border-radius: 8px;
+    margin-left:5px;
+}
+main{
+    margin:3rem auto 0 auto;
+    background-color:white;
+    width:90%;
+    max-width: 90rem;
+    padding:2rem;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.45);
+}
+.comments-section{
+    width:50%;
+    max-width: 50rem;
+    min-width:50rem;
+    padding: 2rem;
+    border-radius: 16px;
+    background-color:rgba(101, 13, 138, 0.8);
+    margin:4rem auto 5rem auto;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.45); 
+}
+.comments-section form{
+    width:100%;
+    margin:auto;
+    padding:2rem;
+    border:1px solid rgba(255,255,255,0.2);
+    border-radius: 16px;
+    box-shadow: 0px 0px 5px rgb(255,255,255);
+    margin-top:2rem;
+}
+.top-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Align items vertically centered */
+}
+
+.top-left {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+}
+.top-left label{
+    display:block;
+    color:white;
+}
+.top-left input{
+    width:30rem;
+    margin-bottom:1rem;
+    height:2rem;
+    border-radius: 6px;
+    border:2px solid gray;
+}
+.top-left input:hover,
+.top-left input:focus{
+    border-color:#338dc4;
+}
+.top-right button{
+    width:8rem;
+    height:8rem;
+    border-radius: 8px;
+    border:1px solid transparent;
+    background-color:#338dc4;
+    color:white;
+}
+.top-right button:hover,
+.top-right button:focus{
+    cursor: pointer;
+    background-color:#0bb5e9;
+}
+.bottom-div{
+    display: block;
+    width:100%;
+}
+.bottom-div label{
+    display:block;
+    color:white;
+}
+.bottom-div textarea{
+    width:100%;
+    resize: none;
+    height: 10rem;
+    padding:1rem;
+    font-size:1.2rem;
+}
+form .errorlist{
+    color:white;
+}
+form .errorlist li{
+    padding:0.5rem;
+    background-color:rgb(162, 27, 27);
+    border-radius: 8px;
+    display: inline;
+}
+.error-box{
+    width:40rem;
+    background-color: rgb(198, 57, 57);
+    border:1px solid rgb(209, 45, 45);
+    color:white;
+    padding:1.5rem;
+    margin:10rem auto 2rem auto;
+}
+.comments{
+    width:55%;
+    margin:auto;
+    padding:0.5rem;
+    margin-top:2rem;
+    border-radius: 16px;;
+}
+.comments ul{
+    list-style: none;
+}
+.comments li{
+    color:white;
+    border:1px solid #e18726;
+    width: 90%;
+    padding:1rem;
+    margin:1rem;
+    border-radius: 8px;
+    background-color:#e18726; 
+    box-shadow: 0 2px 8px rgba(0,0,0,0.45); 
+}
+.read-later-form{
+    position:absolute;
+    bottom:-1rem;
+    left:2.2rem;
+}
+.read-later-form button{
+    padding:0 1rem 0 1rem;
+    height:2rem;
+    border-radius: 8px;
+    border:1px solid #c13535;
+    background-color:#c13535;
+    color:white;
+    box-shadow: 0 0 10px rgb(0,0,0,0.6);
+    cursor: pointer;
+}
+.read-later-form button:hover,
+.read-later-form button:focus{
+    background-color:white;
+    color:#c13535;
+}

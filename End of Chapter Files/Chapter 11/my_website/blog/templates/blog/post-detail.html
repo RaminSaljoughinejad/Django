@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}{{ post.title }}{% endblock %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static "blog/post-detail.css" %}">
+{% endblock %}
+
+{% block content %}
+    {% if form.errors %}
+        <div class='error-box'>
+            <h3>Error</h3>
+            <h4>Sorry, we couldn't submit your comment to the server.</h4>
+            <p>Please check your inputs and resubmit the form.</p>
+        </div>
+    {% endif %}
+
+    <section id='summary'>
+        <h2>{{ post.title }}</h2>
+        <p>
+            {% for tag in post_tags %}
+                <span class='tag'>{{ tag.caption }} </span>
+            {% endfor %}
+        </p>
+        <article>
+            <img src="{{ post.image.url }}" alt="{{ post.title }}">
+            <address>By <a href='mailto:{{ post.author.email }}'>{{ post.author }}</a></address>
+            <div>
+                Last Update on <time>{{ post.date|date:"d M Y" }}</time>
+            </div>
+        </article>
+        <form action="{% url "read-later-url" %}" method="post" class='read-later-form'>
+            {% csrf_token %}
+            <input type="hidden" name="post_id" value='{{ post.id }}'>
+            <button type='submit'>
+                {% if saved_for_later %}
+                    Remove from 'Read-Later' list
+                {% else %}
+                    Read Later
+                {% endif %}
+            </button>
+        </form>
+    </section>
+    <main>
+        <p>
+            {{ post.content }}
+        </p>
+    </main>
+
+    <section class='comments'>
+        <ul>
+            {% for comment in comments %}
+                <li>
+                    <h2>{{ comment.user_name }}:</h2>
+                    <p>{{ comment.text | linebreaks }}</p>
+                </li>
+            {% endfor %}
+        </ul>
+    </section>
+
+    <div class='comments-section'>
+        <form action='{% url "blog-post-detail" post.slug %}' method="post">
+            {% csrf_token %}
+            <div class='top-div'>
+                <div class='top-left'>
+                    {{ form.user_name.label_tag }}
+                    {% if form.user_name.errors %}
+                        {{ form.user_name.errors}}
+                    {% endif %}
+                    {{ form.user_name }}
+                    
+                    {{ form.user_email.label_tag }}
+                    {% if form.user_email.errors %}
+                        {{ form.user_emaile.errors}}
+                    {% endif %}
+                    {{ form.user_email }}
+                </div>
+                <div class='top-right'>
+                    <button type="submit">Submit Comment</button>
+                </div>
+            </div>
+            <div class="bottom-div">
+                {{ form.text.label_tag }}
+                {% if form.text.errors %}
+                        {{ form.text.errors}}
+                    {% endif %}
+                {{ form.text }}
+            </div>
+        </form>
+    </div>
+{% endblock %}
