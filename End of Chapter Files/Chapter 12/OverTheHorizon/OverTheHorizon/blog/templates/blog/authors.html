@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_title %}{% endblock page_title %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static "blog/authors.css" %}">
+{% endblock css_files %}
+
+{% block content %}
+<div class="container text-white-50 mt-5">
+    <h1>Authors List</h1>
+    <table class='table-bordered table-condensed'>
+        <thead class='bg-dark'>
+            <tr>
+                <th>Username</th>
+                <th>Email</th>
+                <th>Date of Creation</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for author in authors %}
+                <tr>
+                    <td>{{ author.username }}</td>
+                    <td>{{ author.email }}</td>
+                    <td>{{ author.date_joined|date:"F j, Y, g:i a" }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock content %}

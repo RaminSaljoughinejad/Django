@@ -1,0 +1,20 @@
+input{
+    width:100%;
+}
+label{
+    display: block;
+}
+textarea{
+    width: 100%;
+    resize: none;
+}
+.container div{
+    margin-top:1rem;
+}
+#id_tags{
+    display:block;
+    width:7rem;
+}
+#id_tags option{
+    padding-left:0.6rem;
+}

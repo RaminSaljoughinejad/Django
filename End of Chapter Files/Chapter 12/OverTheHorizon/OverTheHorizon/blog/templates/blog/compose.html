@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block page_title %}Compose New Post{% endblock page_title %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static "blog/compose.css" %}">
+{% endblock css_files %}
+
+{% block content %}
+<div class="d-flex justify-content-center text-white-50 mt-5">
+    <div class="col-md-3 bg-dark p-4 rounded-lg">
+        <h1 class='text-center text-white'>Compose New Post</h1>
+        <form action="" method="POST" enctype='multipart/form-data'>
+            {% csrf_token %}
+            {{ form }}
+            <button class='btn btn-primary mt-4 btn-block' type="submit">Publish</button>
+        </form>
+    </div>
+</div>
+{% endblock content %}

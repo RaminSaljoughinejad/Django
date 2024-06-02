@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_title %}Logout{% endblock page_title %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static "registration/logged_out.css" %}">
+{% endblock css_files %}
+
+{% block content %}
+    <div class="d-flex justify-content-center">
+        <div class="col-md-5 bg-dark mt-5 p-5 rounded text-white-50">
+            <h3>You are logged out.</h3>
+            <p>Thank you for spending some quality time with us.</p>
+        </div>
+    </div>
+{% endblock content %}

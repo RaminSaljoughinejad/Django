@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_title %}{% endblock page_title %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static "registration/login.css" %}">
+{% endblock css_files %}
+
+{% block content %}
+    <div class="d-flex justify-content-center">
+        <div class='bg-dark p-5 rounded m-5'>
+            <div class='text-center mb-5 pl-5 pr-5'>
+                <div class='w250'></div>
+                <h1 class="display-3 bi bi-door-open"></h1>
+            </div>
+            <hr class='bg-white'>
+            <form action="" method='POST'>
+                {% csrf_token %}
+                <div class="form-group">
+                    {{ form.username.label_tag }}
+                    {{ form.username }}
+                </div>
+                <div class="form-group">
+                    {{ form.password.label_tag }}
+                    {{ form.password }}
+                </div>
+                <button class='form-control btn btn-success' type="submit">Log In</button>
+            </form>
+        </div>
+    </div>
+{% endblock content %}
+

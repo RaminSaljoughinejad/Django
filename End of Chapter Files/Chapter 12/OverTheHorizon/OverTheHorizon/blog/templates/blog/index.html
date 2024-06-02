@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_title %}{% endblock page_title %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static "blog/index.css" %}">
+{% endblock css_files %}
+
+{% block content %}
+    <div class="container mt-3">
+        <div class="row height-50">
+            <a class="col-lg bg-danger text-decoration-none text-white-50 d-flex logo-text-wrapper border border-dark rounded-start" role='button'>
+                <img class='d-inline ml-3 youtube' src='{% static "blog/assets/youtube-logo.svg" %}' alt='Youtube Logo'>
+                <h4 class='d-inline col text-right'>Follow us on Youtube</h4>
+            </a>
+            <a class="col bg-secondary text-decoration-none text-black-50 d-flex logo-text-wrapper border border-dark rounded-end" role='button'>
+                <img class='d-inline ml-3 x-social'  src='{% static "blog/assets/x-social-logo.svg" %}' alt='X Logo'>
+                <h4 class='d-inline col text-right'>Follow us on X (Twitter)</h4>
+            </a>
+        </div>
+    </div>
+    <div class="container mt-3 bg-dark p-4">
+        <div class="row">
+            <div class="col-md-9 bg-primary">1</div>
+            <div class="col-md-3 bg-success">2</div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-md-3 bg-danger">2</div>
+            <div class="col-md-9 bg-warning">1</div>
+        </div>
+    </div>
+{% endblock content %}

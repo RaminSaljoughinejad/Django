@@ -1,0 +1,20 @@
+.height-50 h4{
+    height:100px;
+}
+.logo-text-wrapper h4{
+    padding-top:35px;
+}
+.logo-text-wrapper .youtube{
+    width:80px;
+}
+.logo-text-wrapper .x-social{
+    width:50px;
+}
+.rounded-end{
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.rounded-start{
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}

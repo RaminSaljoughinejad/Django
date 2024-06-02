@@ -1,0 +1,14 @@
+.signup-form input{
+    width:100%;
+}
+.signup-form ul{
+    margin-left:2rem;
+    text-align: justify;
+    width:90%;
+}
+#id_username::placeholder{
+    content: "User Name";
+}
+.errorlist{
+    color:rgb(236, 16, 16);
+}
