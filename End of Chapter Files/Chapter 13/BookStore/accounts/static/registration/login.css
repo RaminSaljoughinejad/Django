@@ -1,0 +1,68 @@
+body{
+    background-color:rgb(31, 29, 29);
+    color:rgb(186, 184, 184);
+}
+.main-wrapper{
+    width:15rem;
+    min-width: 15rem;
+    margin: 5rem auto 0 auto;
+    padding:2rem;
+    padding-top:1rem;
+    border:1px solid rgb(186, 184, 184);
+    box-shadow: 0 0 5px rgba(255,255,255,0.6);
+    border-radius: 6px;
+}
+.main-wrapper p{
+    margin-top:2rem;
+}
+.main-wrapper p label{
+    display: block;
+}
+.main-wrapper p input{
+    width: 95%;
+    height:1.5rem;
+    border:1px solid rgb(186, 184, 184);
+    margin-top:0.5rem;
+    padding-left:10px;
+    border-radius: 6px;
+    background-color:rgb(31, 29, 29);
+    color:rgb(186, 184, 184);
+}
+.main-wrapper p input:hover,
+.main-wrapper p input:active{
+    border-color:rgb(63, 131, 231);
+}
+.main-wrapper button{
+    margin-top:1.5rem;
+    width: 100%;
+    background-color:rgb(63, 131, 231);
+    border:1px solid rgba(63,131,231);
+    height:2rem;
+    color:white;
+    border-radius: 6px;
+    margin-bottom:1rem;
+    cursor: pointer;
+}
+.main-wrapper button:hover,
+.main-wrapper button:active{
+    background-color:white;
+    border-color:white;
+    color:rgb(31, 29, 29);
+}
+.main-wrapper a{
+    text-align: center;
+    color:rgb(31, 29, 29);
+    display: block;
+    background-color:white;
+    height:2rem;
+    border:1px solid white;
+    border-radius: 6px;
+    line-height: 2rem;
+    text-decoration: none;
+}
+.main-wrapper a:hover,
+.main-wrapper a:active{
+    background-color:rgb(63, 131, 231);
+    border-color:rgb(63, 131, 231);
+    color:white;
+}

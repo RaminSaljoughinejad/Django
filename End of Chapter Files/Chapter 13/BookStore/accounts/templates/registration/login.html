@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_title %}Sign Up{% endblock page_title %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static "registration/login.css" %}">
+{% endblock css_files %}
+
+{% block content %}
+<div class="main-wrapper">
+    <form action="" method='POST'>
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Login</button>
+    </form>
+        <a href="{% url "password_reset" %}">Forgot Password?</a>
+</div>
+{% endblock content %}
