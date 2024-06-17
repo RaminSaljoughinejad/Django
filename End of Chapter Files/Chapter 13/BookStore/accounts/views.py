@@ -7,7 +7,7 @@ from django.conf import settings
 class SignUpView(CreateView):
     form_class = CustomUserCreationForm
     template_name = 'registration/signup.html'
-    success_url = reverse_lazy('login')
+    success_url = reverse_lazy('custom-login')
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
